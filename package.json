@@ -1,0 +1,26 @@
+{
+  "name": "jz-doc",
+  "version": "0.0.1",
+  "description": "\u001b[2~文档集合",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jiazhi-Lin/doc.git"
+  },
+  "keywords": [
+    "doc\u001b[3~"
+  ],
+  "author": "jiazhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jiazhi-Lin/doc/issues"
+  },
+  "homepage": "https://github.com/Jiazhi-Lin/doc#readme",
+  "dependencies": {
+    "strict-uri-encode": "^2.0.0"
+  }
+}
