@@ -1,7 +1,15 @@
 .DS_Store
-node_modules
-*.log
+node_modules/
+/dist/
+docs/.vuepress/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
 .idea
 .vscode
-/dev
-/output
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

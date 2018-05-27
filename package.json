@@ -1,26 +1,30 @@
 {
-  "name": "jz-doc",
-  "version": "0.0.1",
-  "description": "\u001b[2~文档集合",
-  "main": "index.js",
+  "name": "testpress",
+  "version": "1.0.0",
+  "description": "A Vue.js project",
+  "author": "zhuL <zl937154020@163.com>",
+  "private": true,
   "scripts": {
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "start": "npm run dev",
+    "build": "node build/build.js",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Jiazhi-Lin/doc.git"
-  },
-  "keywords": [
-    "doc\u001b[3~"
-  ],
-  "author": "jiazhi",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Jiazhi-Lin/doc/issues"
-  },
-  "homepage": "https://github.com/Jiazhi-Lin/doc#readme",
   "dependencies": {
-    "strict-uri-encode": "^2.0.0"
-  }
+    "vue": "^2.5.2"
+  },
+  "devDependencies": {
+    "alienupload": "^0.3.3",
+    "vuepress": "^0.7.0"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }
