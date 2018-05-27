@@ -1,4 +1,3 @@
-# 这是v-alien-upload的vuepress文档
+# 这是我的博客
 
-## 使用yarn install 安装依赖
-## npx vuepress dev docs 运行即可
+## 网址[jiazhi-doc](https://jiazhi-lin.github.io/doc/)

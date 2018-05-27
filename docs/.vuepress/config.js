@@ -3,19 +3,17 @@
  */
 module.exports = {
   base: '/doc/',
-  title: 'Alien-upload',
-  description: '文件上传组件 vue文件上传 多文件上传',
+  title: '智仔的文档集合',
+  description: '知识在于积累 滴水可穿石',
   port:8888,
   themeConfig: {
-    repo: 'ZhuLiangT/v-alien-upload',
+    repo: 'Jiazhi-Lin/doc',
     sidebar: [
-      ['/', '介绍'],
-      ['/example/', '示例'],
-      ['/getstart/', '起步'],
-      ['/api/', '属性'],
-      ['/function/', '方法']
-
-
+      ['/', '前言'],
+      ['/example/', '文章1'],
+      ['/getstart/', '文章2'],
+      ['/api/', '文章3'],
+      ['/function/', '文章4']
     ],
   }
 }
