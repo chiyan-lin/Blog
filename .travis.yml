@@ -1,5 +1,10 @@
+language: node_js
+node_js: 9
+
+# S: Build Lifecycle
+
 script:
-  - sh ./deploy.sh
+  - echo 'no so good'
 
 # E: Build LifeCycle
 branches:

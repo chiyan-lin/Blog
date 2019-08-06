@@ -1,19 +1,66 @@
-/**
- * Created by zhuliang on 2018/4/17.lien-upload
- */
 module.exports = {
-  base: '/doc/',
-  title: '智仔的文档集合',
+  base: '/Blog/',
+  title: 'Gaidy Blog',
   description: '知识在于积累 滴水可穿石',
-  port:8888,
+  serviceWorker: true,
+  port: 8888,
+  head: [
+    ['link', { rel: 'icon', href: 'logo.ico' }]
+  ],
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@': './src/'
+      }
+    }
+  },
   themeConfig: {
-    repo: 'Jiazhi-Lin/doc',
+    repo: 'Jiazhi-Lin/Blog',
     sidebar: [
-      ['/', '前言'],
-      ['/example/', '文章1'],
-      ['/getstart/', '文章2'],
-      ['/api/', '文章3'],
-      ['/function/', '文章4']
-    ],
+      {
+        title: '读书笔记',
+        collapsable: true,
+        children: [
+          '/src/reading/decortaor.md'
+        ]
+      },
+      {
+        title: '服务器',
+        collapsable: true,
+        children: [
+          '/src/tech/linux.md',
+          '/src/tech/docker.md'
+        ]
+      },
+      {
+        title: 'css杂烩',
+        collapsable: true,
+        children: [
+          '/src/cssDoc/linux.md'
+        ]
+      },
+      {
+        title: 'js小视',
+        collapsable: true,
+        children: [
+          '/src/jsDoc/cros.md',
+          '/src/jsDoc/post-get.md'
+        ]
+      },
+      {
+        title: 'node工具',
+        collapsable: true,
+        children: [
+          '/src/tech/linux.md'
+        ]
+      },
+      {
+        title: 'vue组件及小记',
+        collapsable: true,
+        children: [
+          '/src/vueDoc/vue-scroll-helper.md'
+        ]
+      }
+    ]
   }
 }

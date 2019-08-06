@@ -1,15 +1,13 @@
 {
-  "name": "testpress",
+  "name": "blog",
   "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "zhuL <zl937154020@163.com>",
+  "description": "A Vue.js blog",
+  "author": "linjiazhi <540194785@qq.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
-    "build": "node build/build.js",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "pub": "sh deploy.sh"
   },
   "dependencies": {
     "vue": "^2.5.2"
