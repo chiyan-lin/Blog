@@ -7,7 +7,7 @@ module.exports = {
   host: '0.0.0.0',
   port: '8080',
   dest: 'public',
-  base: 'doc',
+  base: 'Blog',
   serviceWorker: true,
   locales: {
     '/': {
@@ -19,7 +19,7 @@ module.exports = {
       lang: 'zh-CN',
       title: 'VuePress',
       description: 'Vue 驱动的静态网站生成器'
-    }  	
+    }
   },
   themeConfig: {
   	/* 多语言的时候使用 */
@@ -54,13 +54,13 @@ module.exports = {
       {
         text: 'Languages',
         items: [
-          { text: 'Group1', 
+          { text: 'Group1',
 		        items: [
 		          { text: 'Chinese', link: '/language/chinese' },
 		          { text: 'Japanese', link: '/language/japanese' }
 		        ]
           },
-          { text: 'Group2', 
+          { text: 'Group2',
 		        items: [
 		          { text: 'Chinese', link: '/language/chinese' },
 		          { text: 'Japanese', link: '/language/japanese' }

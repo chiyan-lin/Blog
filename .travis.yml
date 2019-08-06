@@ -1,0 +1,8 @@
+script:
+  - sh ./deploy.sh
+
+# E: Build LifeCycle
+branches:
+  only:
+    - master
+
