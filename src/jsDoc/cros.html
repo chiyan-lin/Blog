@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Gaidy Blog | 前后端都需要知道的跨域</title>
+    <meta name="description" content="知识在于积累 滴水可穿石">
+    <link rel="icon" href="logo.ico">
+    
+    <link rel="preload" href="/Blog/assets/css/0.styles.db479b62.css" as="style"><link rel="preload" href="/Blog/assets/js/app.b978a6c9.js" as="script"><link rel="preload" href="/Blog/assets/js/6.953b7f86.js" as="script"><link rel="prefetch" href="/Blog/assets/js/4.9d74c53a.js"><link rel="prefetch" href="/Blog/assets/js/1.7776ef1f.js"><link rel="prefetch" href="/Blog/assets/js/2.11fec989.js"><link rel="prefetch" href="/Blog/assets/js/3.01cf74d5.js"><link rel="prefetch" href="/Blog/assets/js/5.4bb40821.js"><link rel="prefetch" href="/Blog/assets/js/7.b8336b8d.js"><link rel="prefetch" href="/Blog/assets/js/8.c96fc0e4.js"><link rel="prefetch" href="/Blog/assets/js/9.8ae8702c.js"><link rel="prefetch" href="/Blog/assets/js/10.d5705150.js">
+    <link rel="stylesheet" href="/Blog/assets/css/0.styles.db479b62.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/Blog/" class="home-link router-link-active"><!----><span class="site-name">
+      Gaidy Blog
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><a href="https://github.com/Jiazhi-Lin/Blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><a href="https://github.com/Jiazhi-Lin/Blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>读书笔记</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>服务器</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>css杂烩</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>js小视</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/Blog/src/jsDoc/cros.html" class="active sidebar-link">前后端都需要知道的跨域</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/Blog/src/jsDoc/post-get.html" class="sidebar-link">post 和 get的那些事</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>node工具</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>vue组件及小记</span><span class="arrow right"></span></p><!----></div></li></ul></div><div class="page"><div class="content"><h3 id="前后端都需要知道的跨域"><a href="#前后端都需要知道的跨域" aria-hidden="true" class="header-anchor">#</a> 前后端都需要知道的跨域</h3><h4 id="what-跨域"><a href="#what-跨域" aria-hidden="true" class="header-anchor">#</a> what 跨域</h4><ul><li>跨域（跨域 HTTP 请求）就是前端在访问接口的时候，与访问的接口的 协议、域名、端口号 不是同一个，就会有跨域问题，这里产生跨域问题的原因是 XmlHttpRequest同源策略 ，也就是禁止使用XHR对象向不同源的服务器地址发起HTTP请求。</li></ul><h4 id="why-跨域"><a href="#why-跨域" aria-hidden="true" class="header-anchor">#</a> why 跨域</h4><ul><li>AJAX同源策略主要用来防止CSRF攻击。如果没有AJAX同源策略，相当危险，因为我们发起的每一次HTTP请求都会带上请求地址对应的cookie。</li></ul><h4 id="请求的种类"><a href="#请求的种类" aria-hidden="true" class="header-anchor">#</a> 请求的种类</h4><p>1、简单请求
+<table><tr><td>请求方法</td><td>header</td></tr><tr><td>HEAD</td><td rowspan="3">
+Accept、Accept-Language、Content-Language、Last-Event-ID、Content-Type(只限于三个值application/x-www-form-urlencoded、multipart/form-data、text/plain)
+</td></tr><tr><td>GET</td></tr><tr><td>POST</td></tr></table></p><p>2、非简单请求</p><p>除了上面的请求方法外的其他方法 delete、put 两个，还有携带其他自定义的请求头 即为非简单请求。</p><h4 id="浏览器处理简单请求"><a href="#浏览器处理简单请求" aria-hidden="true" class="header-anchor">#</a> 浏览器处理简单请求</h4><p>1、基本流程</p><p>先增加一个 Origin 字段，这个是直接拿的请求发起页面的http协议和域名还有端口</p><p>服务端需要支持我们这个origin跨域请求，各个版本的跨域设置看文章底部。</p><pre class="language-json"><code><span class="token punctuation">{</span>
+    &lt;!--必须 设置允许跨域的 origin --&gt;
+    <span class="token property">&quot;Access-Control-Allow-Origin&quot;</span><span class="token operator">:</span> string
+    &lt;!--可选 设置允许跨域请求带的 requset header --&gt;
+    <span class="token property">&quot;Access-Control-Allow-Headers&quot;</span><span class="token operator">:</span> String
+    &lt;!--可选 设置允许跨域的 Methods --&gt;
+    <span class="token property">&quot;Access-Control-Allow-Methods&quot;</span><span class="token operator">:</span> String
+    &lt;!--可选 设置允许跨域的 cookie<span class="token punctuation">,</span> 开启此字段，前端 ajax 需要 设置withCredentials 且 Access-Control-Allow-Origin 不能为 *  --&gt;
+    <span class="token property">&quot;Access-Control-Allow-Credentials&quot;</span><span class="token operator">:</span> Boolean
+    &lt;!--可选 设置option预检请求的缓存时间 --&gt;
+    <span class="token property">&quot;Access-Control-Max-Age&quot;</span><span class="token operator">:</span> Number
+<span class="token punctuation">}</span>
+</code></pre><h4 id="浏览器处理复杂请求"><a href="#浏览器处理复杂请求" aria-hidden="true" class="header-anchor">#</a> 浏览器处理复杂请求</h4><ul><li>复杂请求在跨域请求的时候浏览器会发送一个预检请求，method 为 option，服务端需要首先通过验证这个预检请求，给这个请求返回 200 ，此时的 header 和 method 必须和 <code>access-control-allow</code> 中设置的保持一致。浏览器收到 option 响应，确认设置的 method 和 header 对上了，认为预检通过了，就开始正式的发送这个请求。</li></ul><pre class="language-text"><code>// 一次option预请求
+:authority: i-863.kaixindou.net
+:method: OPTIONS
+:path: /gameInfo/fetchPkWinStreakShareInfo?uid=101001638&amp;streakWin=3
+:scheme: https
+accept: */*
+accept-encoding: gzip, deflate, br
+accept-language: zh-CN,zh;q=0.9
+access-control-request-headers: x-lang,x-ostype
+access-control-request-method: GET
+origin: https://www.kaixindou.net
+user-agent: Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Mobile Safari/537.36
+</code></pre><ul><li>预检请求的允许通过，此时预检请求返回 200 在 <code>preview</code> 中看到 200 或者一个空页面</li></ul><pre class="language-text"><code>access-control-allow-credentials: true
+access-control-allow-headers: x-lang, x-ostype
+access-control-allow-methods: OPTIONS,GET,POST
+access-control-allow-origin: https://www.kaixindou.net
+content-length: 0
+date: Wed, 15 Aug 2018 13:09:38 GMT
+server: nginx
+status: 200
+vary: Access-Control-Request-Method
+vary: Origin
+vary: Access-Control-Request-Headers
+</code></pre><ul><li>预检请求不允许通过，预检请求同样返回 200 ，在  <code>preview</code> 中看到 nothing to preview，response没有返回 <code>access-control-allow</code> 相关字段
+<ul><li>header 报错</li></ul><pre class="language-text"><code>// console 的报错
+Request header field xxxx is not allowed by Access-Control-Allow-Headers in preflight response.
+</code></pre><pre class="language-text"><code>// 网络请求的 response
+Content-Type: application/json; charset=utf-8
+</code></pre><ul><li>origin 报错</li></ul><pre class="language-text"><code>// console 的报错
+Origin xxxxxxxxxx is not allowed by Access-Control-Allow-Origin.
+</code></pre><pre class="language-text"><code>// 网络请求的 response
+Content-Type: application/json; charset=utf-8
+</code></pre></li></ul><h4 id="怎么避免这个预请求"><a href="#怎么避免这个预请求" aria-hidden="true" class="header-anchor">#</a> 怎么避免这个预请求</h4><ul><li>我们一般开发，会涉及到预请求的无非就是设置了其他的 header，方法我们也只是用到 get 和 post</li></ul><ol><li>让服务端缓存我们的预请求</li></ol><pre class="language-text"><code>// 让服务器设置下面这个头，在多次请求的时候可以避免二次预检
+Access-Control-Max-Age: ms
+</code></pre><ol start="2"><li>和服务端协商，设置的 header 使用 Last-Event-ID 等浏览器预置的 header，从根本上避免 option 的预请求</li></ol><h4 id="开发中遇到的问题"><a href="#开发中遇到的问题" aria-hidden="true" class="header-anchor">#</a> 开发中遇到的问题</h4><ul><li>jq的 ajax 的携带 header 好坑，怎么都带不上去，建议使用 <a href="https://www.kancloud.cn/yunye/axios/234845" target="_blank" rel="noopener noreferrer">axios</a><pre class="language-text"><code>// axios比较烦的 get 请求和 post 请求的参数位不一样,建议使用自己简单封装下
+Axios({
+  url: url[region] + '/wemeet/set_img_status',
+  method: 'post',
+  data: data,// post 使用
+  param: data,// get 使用
+  headers: { 'X-Auth-Token': encodeURIComponent(token) }
+}).then(rsp =&gt; rsp.data).catch(err =&gt; {
+  console.log(err.message)
+})
+</code></pre></li><li>封装过的<pre class="language-text"><code>export const axios = (url, type = 'GET', data = {}) =&gt; {
+  if (typeof url === 'object') {
+    return Axios(url)
+  }
+  if (typeof type === 'object') {
+    data = type
+    type = 'GET'
+  }
+  const axiosData = {
+    withCredentials: true,
+    method: type,
+    url
+  }
+  if (type === 'GET') {
+    axiosData.params = data
+  }
+  if (type === 'POST') {
+    axiosData.data = data
+  }
+  axiosData.headers = { header: '12321' }
+  return Axios(`${url}`, axiosData).then(rsp =&gt; {
+    console.log(`${url}`, rsp.data)
+    return rsp.data
+  }).catch(e =&gt; {
+    alert(e.message)
+  })
+}
+</code></pre></li></ul><h3 id="附录"><a href="#附录" aria-hidden="true" class="header-anchor">#</a> 附录</h3><ul><li>node express 跨域设置</li></ul><pre class="language-javascript"><code><span class="token comment">// 使用express中间件</span>
+<span class="token keyword">const</span> whiteList <span class="token operator">=</span> <span class="token punctuation">[</span> xx<span class="token punctuation">.</span>com <span class="token punctuation">]</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token string">'*'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+	<span class="token keyword">let</span> origin <span class="token operator">=</span> req<span class="token punctuation">.</span>headers<span class="token punctuation">.</span>origin
+	<span class="token keyword">let</span> allowOrigin <span class="token operator">=</span> <span class="token string">'http://fe.xx.com'</span>
+	origin <span class="token operator">&amp;&amp;</span> whiteList<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>v <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>origin<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			allowOrigin <span class="token operator">=</span> origin
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span>
+	res<span class="token punctuation">.</span><span class="token function">header</span><span class="token punctuation">(</span><span class="token string">&quot;Access-Control-Allow-Origin&quot;</span><span class="token punctuation">,</span> allowOrigin<span class="token punctuation">)</span>
+	res<span class="token punctuation">.</span><span class="token function">header</span><span class="token punctuation">(</span><span class="token string">&quot;Access-Control-Allow-Headers&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Content-Type, Authorization, X-Requested-With&quot;</span><span class="token punctuation">)</span>
+	res<span class="token punctuation">.</span><span class="token function">header</span><span class="token punctuation">(</span><span class="token string">&quot;Access-Control-Allow-Methods&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;PUT,POST,GET,DELETE,OPTIONS&quot;</span><span class="token punctuation">)</span>
+    res<span class="token punctuation">.</span><span class="token function">header</span><span class="token punctuation">(</span><span class="token string">&quot;Access-Control-Allow-Credentials&quot;</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span>
+    res<span class="token punctuation">.</span><span class="token function">header</span><span class="token punctuation">(</span><span class="token string">&quot;Access-Control-Max-Age&quot;</span><span class="token punctuation">,</span> <span class="token number">1728000</span><span class="token punctuation">)</span>
+	res<span class="token punctuation">.</span><span class="token function">header</span><span class="token punctuation">(</span><span class="token string">&quot;X-Powered-By&quot;</span><span class="token punctuation">,</span> <span class="token string">'3.2.1'</span><span class="token punctuation">)</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>req<span class="token punctuation">.</span>method <span class="token operator">==</span> <span class="token string">'OPTIONS'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	  res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+	  <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><ul><li>go 跨域设置</li></ul><pre class="language-go"><code><span class="token keyword">func</span> <span class="token function">allowCrossOrigin</span><span class="token punctuation">(</span>rw http<span class="token punctuation">.</span>ResponseWriter<span class="token punctuation">,</span> req <span class="token operator">*</span>http<span class="token punctuation">.</span>Request<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">if</span> strings<span class="token punctuation">.</span><span class="token function">ContainsAny</span><span class="token punctuation">(</span>req<span class="token punctuation">.</span>Header<span class="token punctuation">.</span><span class="token function">Get</span><span class="token punctuation">(</span><span class="token string">&quot;Origin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;yy.com&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		rw<span class="token punctuation">.</span><span class="token function">Header</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">Set</span><span class="token punctuation">(</span><span class="token string">&quot;Access-Control-Allow-Origin&quot;</span><span class="token punctuation">,</span> req<span class="token punctuation">.</span>Header<span class="token punctuation">.</span><span class="token function">Get</span><span class="token punctuation">(</span><span class="token string">&quot;Origin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+		rw<span class="token punctuation">.</span><span class="token function">Header</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">Set</span><span class="token punctuation">(</span><span class="token string">&quot;Access-Control-Allow-Method&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;PUT,OPTIONS,POST,GET&quot;</span><span class="token punctuation">)</span>
+		rw<span class="token punctuation">.</span><span class="token function">Header</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">Set</span><span class="token punctuation">(</span><span class="token string">&quot;Access-Control-Allow-Credentials&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">)</span>
+		rw<span class="token punctuation">.</span><span class="token function">Header</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">Set</span><span class="token punctuation">(</span><span class="token string">&quot;Access-Control-Allow-Headers&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Content-Type, X-Auth-Token&quot;</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">HttpGetImgList</span><span class="token punctuation">(</span>rw http<span class="token punctuation">.</span>ResponseWriter<span class="token punctuation">,</span> req <span class="token operator">*</span>http<span class="token punctuation">.</span>Request<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> req<span class="token punctuation">.</span>Method <span class="token operator">==</span> http<span class="token punctuation">.</span>MethodOptions <span class="token punctuation">{</span>
+    	<span class="token function">allowCrossOrigin</span><span class="token punctuation">(</span>rw<span class="token punctuation">,</span> req<span class="token punctuation">)</span>
+    	com_http<span class="token punctuation">.</span><span class="token function">SendCommonResp</span><span class="token punctuation">(</span>rw<span class="token punctuation">,</span> req<span class="token punctuation">.</span>URL<span class="token punctuation">.</span><span class="token function">Query</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">Get</span><span class="token punctuation">(</span><span class="token string">&quot;callback&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">&quot;r u ok&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">)</span>
+    	<span class="token keyword">return</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><h5 id="参考链接"><a href="#参考链接" aria-hidden="true" class="header-anchor">#</a> 参考链接</h5><ul><li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS#HTTP_%E5%93%8D%E5%BA%94%E9%A6%96%E9%83%A8%E5%AD%97%E6%AE%B5" target="_blank" rel="noopener noreferrer">HTTP访问控制（CORS）</a></li><li><a href="http://www.ruanyifeng.com/blog/2016/04/cors.html" target="_blank" rel="noopener noreferrer">跨域资源共享 CORS 详解</a></li><li><a href="https://zhuanlan.zhihu.com/p/28562290" target="_blank" rel="noopener noreferrer">跨域的那些事儿</a></li><li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers" target="_blank" rel="noopener noreferrer">HTTP Headers</a></li></ul></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/Blog/src/tech/docker.html" class="prev">
+          docker 心路历程
+        </a></span><span class="next"><a href="/Blog/src/jsDoc/post-get.html">
+          post 和 get的那些事
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/Blog/assets/js/6.953b7f86.js" defer></script><script src="/Blog/assets/js/app.b978a6c9.js" defer></script>
+  </body>
+</html>

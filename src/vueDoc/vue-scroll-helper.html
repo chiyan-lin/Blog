@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Gaidy Blog | vue-scroll-helper</title>
+    <meta name="description" content="知识在于积累 滴水可穿石">
+    <link rel="icon" href="logo.ico">
+    
+    <link rel="preload" href="/Blog/assets/css/0.styles.db479b62.css" as="style"><link rel="preload" href="/Blog/assets/js/app.b978a6c9.js" as="script"><link rel="preload" href="/Blog/assets/js/1.7776ef1f.js" as="script"><link rel="prefetch" href="/Blog/assets/js/4.9d74c53a.js"><link rel="prefetch" href="/Blog/assets/js/2.11fec989.js"><link rel="prefetch" href="/Blog/assets/js/3.01cf74d5.js"><link rel="prefetch" href="/Blog/assets/js/5.4bb40821.js"><link rel="prefetch" href="/Blog/assets/js/6.953b7f86.js"><link rel="prefetch" href="/Blog/assets/js/7.b8336b8d.js"><link rel="prefetch" href="/Blog/assets/js/8.c96fc0e4.js"><link rel="prefetch" href="/Blog/assets/js/9.8ae8702c.js"><link rel="prefetch" href="/Blog/assets/js/10.d5705150.js">
+    <link rel="stylesheet" href="/Blog/assets/css/0.styles.db479b62.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/Blog/" class="home-link router-link-active"><!----><span class="site-name">
+      Gaidy Blog
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><a href="https://github.com/Jiazhi-Lin/Blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><a href="https://github.com/Jiazhi-Lin/Blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>读书笔记</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>服务器</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>css杂烩</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>js小视</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>node工具</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>vue组件及小记</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/Blog/src/vueDoc/vue-scroll-helper.html" class="active sidebar-link">vue-scroll-helper</a><ul class="sidebar-sub-headers"></ul></li></ul></div></li></ul></div><div class="page"><div class="content"><h3 id="vue-scroll-helper"><a href="#vue-scroll-helper" aria-hidden="true" class="header-anchor">#</a> vue-scroll-helper</h3><blockquote><p>一个基于 vue 的滚动组件</p></blockquote><p><em>WHY：写这个组件是在写一个无限滚动的列表，使用过其他组件感觉不够灵活，整老半天用起来还不是很方便。所以在react项目写完之后，觉得可以自己封一个更加完美的。其实类似的轮子网上有的是，但是还是觉得可以在造一个，并不是因为闲的发慌，是觉得这样可以锻炼自己考虑作为一个组件的全面性，怎么设置属性可以更好的适应各种场景啥的，一直都是在使用别人的组件，是时候自己动手弄一弄了。自己造轮子还可以根据自己的需要进行定制，多爽</em> ƪ(‾ε‾“)ʃƪ(</p><h4 id="例子走起"><a href="#例子走起" aria-hidden="true" class="header-anchor">#</a> 例子<a href="https://kxd-test.yy.com/a/interfaces-201805-feat-mob/scrollHelper.html" target="_blank" rel="noopener noreferrer">走起</a></h4><p><img src="https://makefriends.bs2dl.yy.com/bm1534680729467.png" alt></p><h4 id="安装"><a href="#安装" aria-hidden="true" class="header-anchor">#</a> 安装</h4><pre class="language-text"><code>npm install vue-scroll-helper --save
+yarn add vue-scroll-helper --save
+
+</code></pre><h4 id="参数"><a href="#参数" aria-hidden="true" class="header-anchor">#</a> 参数</h4><table><thead><tr><th>props</th><th>含义</th><th>类型</th><th>值</th></tr></thead><tbody><tr><td>mod</td><td>使用无限滚动模式还是点击加载更多的模式</td><td>String</td><td>auto【默认】、manual【需要点击才会加载】</td></tr><tr><td>limit</td><td>最多翻到的页数</td><td>Number</td><td>0【默认无限滚动】</td></tr><tr><td>pageStart</td><td>滚动的起始页</td><td>Number</td><td>0【默认从0开始计数】</td></tr><tr><td>threshold</td><td>到达哪个阈值触发下一页</td><td>Number</td><td>250【页面底部到显示容器的距离】</td></tr><tr><td>isOver</td><td>是不是加载完了</td><td>Boolean</td><td>false</td></tr><tr><td>isAutoLoad</td><td>设置组件加载完成自动完成第一页的加载显示</td><td>Boolean</td><td>false</td></tr><tr><td>isInWindow</td><td>是不是以window作为显示容器，此时显示页面为html</td><td>Boolean</td><td>false</td></tr><tr><td>onLoadNextFn</td><td>触发加载下一页的回调函数【设置了pageStart 的话，此时的回调返回 pageStart+1 】</td><td>Function</td><td>必设【回调参数返回下一页页码】</td></tr><tr><td>wrapStyle</td><td>显示容器的样式</td><td>Object</td><td>{}</td></tr><tr><td>wrapClass</td><td>显示容器的样式</td><td>Object/String</td><td>''</td></tr><tr><td>list</td><td>你的 v-for 列表</td><td>slot</td><td>必设</td></tr><tr><td>loading</td><td>自定义显示的加载的样式</td><td>slot</td><td>Loading...</td></tr><tr><td>loadMore</td><td>自定义点击加载更多的样式</td><td>slot</td><td>Click To Load More</td></tr><tr><td>noMore</td><td>自定义没有更多的样式</td><td>slot</td><td>No More</td></tr></tbody></table><h4 id="简约"><a href="#简约" aria-hidden="true" class="header-anchor">#</a> 简约</h4><pre class="language-text"><code>&lt;template&gt;
+  &lt;div id=&quot;app&quot;&gt;
+    &lt;vueScrollHelper
+      :isOver=&quot;isOver&quot;
+      wrapClass=&quot;youclass&quot;
+      :onLoadNextFn=&quot;onLoadNextFn&quot;&gt;
+      &lt;template slot=&quot;list&quot;&gt;
+        &lt;div v-for=&quot;(v, i) in client&quot; :key=&quot;i&quot; class=&quot;item&quot;&gt;
+          {{v}}
+        &lt;/div&gt;
+      &lt;/template&gt;
+      &lt;template slot=&quot;loading&quot;&gt;
+        &lt;div style=&quot;width:100%;text-align:center&quot;&gt;加载中&lt;/div&gt;
+      &lt;/template&gt;
+      &lt;template slot=&quot;loadMore&quot;&gt;
+        &lt;div style=&quot;width:100%;text-align:center&quot;&gt;点击加载更多&lt;/div&gt;
+      &lt;/template&gt;
+      &lt;template slot=&quot;noMore&quot;&gt;
+        &lt;div style=&quot;width:100%;text-align:center&quot;&gt;我是有底线的&lt;/div&gt;
+      &lt;/template&gt;
+    &lt;/vueScrollHelper&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import vueScrollHelper from '@/component/vue-scroll-helper'
+
+export default {
+  name: 'app',
+  data () {
+    return {
+      client: [],
+      count: 10,
+      logMsgs: '',
+      isOver: true
+    }
+  },
+  components: {
+    vueScrollHelper
+  },
+  created () {
+  },
+  watch: {
+  },
+  mounted () {
+  },
+  methods: {
+    async onLoadNextFn (page) {
+      console.log('加载下一页', page)
+      var data = []
+      for (var i = 0, j = 10; i &lt; j; i++) {
+        data.push(this.count++);
+      }
+      await new Promise(function (fulfill) {
+        setTimeout(fulfill, 2000)
+      })
+      if (this.client.length &gt;= 40) {
+        this.isOver = false
+      } else {
+        this.client = this.client.concat(data)
+      }
+    }
+  }
+}
+&lt;/script&gt;
+
+&lt;style lang=&quot;scss&quot;&gt;
+
+&lt;/style&gt;
+
+</code></pre><h4 id="使用姿势"><a href="#使用姿势" aria-hidden="true" class="header-anchor">#</a> 使用姿势</h4><pre class="language-text"><code>&lt;template&gt;
+  &lt;div id=&quot;app&quot;&gt;
+    &lt;vueScrollHelper
+      mod=&quot;auto&quot;
+      :wrapStyle=&quot;{height:'500px', border: '1px solid red'}&quot;
+      :isOver=&quot;isOver&quot;
+      wrapClass=&quot;bg&quot;
+      :onLoadNextFn=&quot;onLoadNextFn&quot;
+      :isAutoLoad=&quot;true&quot;
+      :limit=&quot;0&quot;
+      :threshold=&quot;250&quot;
+      :isInWindow=&quot;false&quot;
+      :pageStart=&quot;0&quot;&gt;
+      &lt;template slot=&quot;list&quot;&gt;
+        &lt;div v-for=&quot;(v, i) in client&quot; :key=&quot;i&quot; class=&quot;item&quot;&gt;
+          {{v}}
+        &lt;/div&gt;
+      &lt;/template&gt;
+      &lt;template slot=&quot;loading&quot;&gt;
+        &lt;div style=&quot;width:100%;text-align:center&quot;&gt;加载中&lt;/div&gt;
+      &lt;/template&gt;
+      &lt;template slot=&quot;loadMore&quot;&gt;
+        &lt;div style=&quot;width:100%;text-align:center&quot;&gt;点击加载更多&lt;/div&gt;
+      &lt;/template&gt;
+      &lt;template slot=&quot;noMore&quot;&gt;
+        &lt;div style=&quot;width:100%;text-align:center&quot;&gt;我是有底线的&lt;/div&gt;
+      &lt;/template&gt;
+    &lt;/vueScrollHelper&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import vueScrollHelper from '@/component/vue-scroll-helper'
+
+export default {
+  name: 'app',
+  data () {
+    return {
+      client: [0,1,2,3,4,5,6,7,8,9],
+      count: 10,
+      logMsgs: '',
+      isOver: true
+    }
+  },
+  components: {
+    vueScrollHelper
+  },
+  created () {
+  },
+  watch: {
+  },
+  mounted () {
+  },
+  methods: {
+    async onLoadNextFn (page) {
+      console.log('加载下一页', page)
+      var data = []
+      for (var i = 0, j = 10; i &lt; j; i++) {
+        data.push(this.count++);
+      }
+      await new Promise(function (fulfill) {
+        setTimeout(fulfill, 2000)
+      })
+      if (this.client.length &gt;= 40) {
+        this.isOver = false
+      } else {
+        this.client = this.client.concat(data)
+      }
+    }
+  }
+}
+&lt;/script&gt;
+
+&lt;style lang=&quot;scss&quot;&gt;
+html,body {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  background: pink;
+}
+
+.item {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #bbb;
+  margin-bottom: 10px;
+}
+
+&lt;/style&gt;
+
+</code></pre><h4 id="检测原理"><a href="#检测原理" aria-hidden="true" class="header-anchor">#</a> 检测原理</h4><p><img src="https://makefriends.bs2dl.yy.com/bm1534673858922.png" alt></p><h4 id="优点"><a href="#优点" aria-hidden="true" class="header-anchor">#</a> 优点</h4><p>1、支持直接滚动到底部加载和滚动到底部出现按钮点击加载</p><p>2、使用 vue-scroll-helper 不需要自己在组件中控制 loading 的显示，vue-scroll-helper 已经自己实现检测 slot=list 的节点变化，不会重复触发设置的加载下一页的回调函数</p><p>3、更加丰富的设置项</p><h4 id="不足"><a href="#不足" aria-hidden="true" class="header-anchor">#</a> 不足</h4><ul><li>觉得在检测 slot = list 这个的变化上，我用的是 <a href="https://caniuse.com/#search=MutationObserver" target="_blank" rel="noopener noreferrer">MutationObserver</a> 检测节点变化 ，似乎兼容性一般，这个后面再看。</li></ul><h4 id="对比"><a href="#对比" aria-hidden="true" class="header-anchor">#</a> 对比</h4><p><em>没有对比，那写这个组件有什么说服力，拿组内一直在使用的 vue-infinite-scroll 来互相伤害，从别人的源码还是看到一些有意思的实现，文末有总结</em></p><p>1、实现姿势</p><table><thead><tr><th>vue-scroll-helper</th><th>vue-infinite-scroll</th></tr></thead><tbody><tr><td>使用组件加载的形式，直接import到项目</td><td>使用 Vue.directive 的方式处理</td></tr></tbody></table><p>2、检测到达阈值的实现</p><p>基本的实现方式没大差别，只是获取滚动元素上看到了一段有意思的代码</p><ul><li>拿到容器后 vue-infinite-scroll 这样去获取节点</li></ul><pre class="language-text"><code>var getScrollEventTarget = function (element) {
+  var currentNode = element;
+  // bugfix, see http://w3help.org/zh-cn/causes/SD9013 and http://stackoverflow.com/questions/17016740/onscroll-function-is-not-working-for-chrome
+  while (currentNode &amp;&amp; currentNode.tagName !== 'HTML' &amp;&amp; currentNode.tagName !== 'BODY' &amp;&amp; currentNode.nodeType === 1) {
+    var overflowY = getComputedStyle(currentNode).overflowY;
+    if (overflowY === 'scroll' || overflowY === 'auto') {
+      return currentNode;
+    }
+    currentNode = currentNode.parentNode;
+  }
+  return window;
+}
+</code></pre><ul><li>拿到容器后 vue-scroll-helper 这样去获取节点</li></ul><pre class="language-text"><code>// 因为我是直接把容器放在我的组件里面的，组件有个属性 ref=&quot;wrap&quot;
+var getScrollEventTarget = this.$refs.wrap
+
+</code></pre><p>3、功能区别</p><table><thead><tr><th>vue-scroll-helper</th><th>vue-infinite-scroll</th></tr></thead><tbody><tr><td>支持使用window作为容器层</td><td>从文档和源码看起来似乎不支持，有不同看法的可以来diss我</td></tr><tr><td>不需要控制loading的状态</td><td>需要控制loading的状态，列表没了页需要手动添加控制nomore的显示</td></tr></tbody></table><p>4、代码上
+发现人家代码里面设置变量有 var 和 const 交叉使用，强迫症看起来很难受</p><p>。。。</p><h4 id="思考"><a href="#思考" aria-hidden="true" class="header-anchor">#</a> 思考</h4><ul><li>在指令里面监听组件的姿势</li></ul><pre class="language-text"><code>  // bind是directive的钩子 https://cn.vuejs.org/v2/guide/custom-directive.html
+  bind(el, binding, vnode) {
+    el[ctx] = {
+      el,
+      vm: vnode.context,
+      expression: binding.value
+    };
+    const args = arguments;
+    console.log(el['@@oIo'], binding, vnode)
+    ** 就是这里，我不截出去了 **
+    el[ctx].vm.$on('hook:mounted', function () {
+      el[ctx].vm.$nextTick(function () {
+        // 判断元素是不是已经挂载
+        if (isAttached(el)) {
+          doBind.call(el[ctx], args);
+        }
+        el[ctx].bindTryCount = 0;
+        var tryBind = function () {
+          if (el[ctx].bindTryCount &gt; 10) return; //eslint-disable-line
+          el[ctx].bindTryCount++;
+          if (isAttached(el)) {
+            doBind.call(el[ctx], args);
+          } else {
+            setTimeout(tryBind, 50);
+          }
+        };
+        tryBind();
+      });
+    });
+  },
+</code></pre><p>2、在组件加载的时候看看有没有 vue 这个对象，有的话直接 install</p><pre class="language-text"><code>const install = function(Vue) {
+  Vue.directive('InfiniteScroll', InfiniteScroll);
+};
+
+if (window.Vue) {
+  ** 这里有个问题，为什么要挂载window对象上面 **
+  window.infiniteScroll = InfiniteScroll;
+  Vue.use(install); // eslint-disable-line
+}
+
+InfiniteScroll.install = install;
+</code></pre></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/Blog/src/jsDoc/post-get.html" class="prev">
+          post 和 get的那些事
+        </a></span><!----></p></div></div></div></div>
+    <script src="/Blog/assets/js/1.7776ef1f.js" defer></script><script src="/Blog/assets/js/app.b978a6c9.js" defer></script>
+  </body>
+</html>

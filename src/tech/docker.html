@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Gaidy Blog | docker 心路历程</title>
+    <meta name="description" content="知识在于积累 滴水可穿石">
+    <link rel="icon" href="logo.ico">
+    
+    <link rel="preload" href="/Blog/assets/css/0.styles.db479b62.css" as="style"><link rel="preload" href="/Blog/assets/js/app.b978a6c9.js" as="script"><link rel="preload" href="/Blog/assets/js/3.01cf74d5.js" as="script"><link rel="prefetch" href="/Blog/assets/js/4.9d74c53a.js"><link rel="prefetch" href="/Blog/assets/js/1.7776ef1f.js"><link rel="prefetch" href="/Blog/assets/js/2.11fec989.js"><link rel="prefetch" href="/Blog/assets/js/5.4bb40821.js"><link rel="prefetch" href="/Blog/assets/js/6.953b7f86.js"><link rel="prefetch" href="/Blog/assets/js/7.b8336b8d.js"><link rel="prefetch" href="/Blog/assets/js/8.c96fc0e4.js"><link rel="prefetch" href="/Blog/assets/js/9.8ae8702c.js"><link rel="prefetch" href="/Blog/assets/js/10.d5705150.js">
+    <link rel="stylesheet" href="/Blog/assets/css/0.styles.db479b62.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/Blog/" class="home-link router-link-active"><!----><span class="site-name">
+      Gaidy Blog
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><a href="https://github.com/Jiazhi-Lin/Blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><a href="https://github.com/Jiazhi-Lin/Blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>读书笔记</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>服务器</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/Blog/src/tech/linux.html" class="sidebar-link">linux 大盘点</a></li><li><a href="/Blog/src/tech/docker.html" class="active sidebar-link">docker 心路历程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Blog/src/tech/docker.html#docker-心路历程" class="sidebar-link">docker 心路历程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Blog/src/tech/docker.html#软件开发痛点" class="sidebar-link">软件开发痛点</a></li><li class="sidebar-sub-header"><a href="/Blog/src/tech/docker.html#什么是-docker" class="sidebar-link">什么是 docker</a></li><li class="sidebar-sub-header"><a href="/Blog/src/tech/docker.html#docker-能干什么" class="sidebar-link">docker 能干什么</a></li><li class="sidebar-sub-header"><a href="/Blog/src/tech/docker.html#和虚拟机的区别" class="sidebar-link">和虚拟机的区别</a></li><li class="sidebar-sub-header"><a href="/Blog/src/tech/docker.html#docker-在-window-上的正确使用姿势" class="sidebar-link">docker 在 window 上的正确使用姿势</a></li><li class="sidebar-sub-header"><a href="/Blog/src/tech/docker.html#docker-基本介绍及架构分析" class="sidebar-link">docker 基本介绍及架构分析</a></li><li class="sidebar-sub-header"><a href="/Blog/src/tech/docker.html#image-docker的模板" class="sidebar-link">Image -- docker的模板</a></li><li class="sidebar-sub-header"><a href="/Blog/src/tech/docker.html#container-docker的集装箱" class="sidebar-link">Container -- docker的集装箱</a></li><li class="sidebar-sub-header"><a href="/Blog/src/tech/docker.html#dockerfile-语法" class="sidebar-link">Dockerfile 语法</a></li><li class="sidebar-sub-header"><a href="/Blog/src/tech/docker.html#docker-的-github-hub-docker-传送门" class="sidebar-link">docker 的 GitHub -- hub.docker [传送门](https://hub.docker.com/)</a></li><li class="sidebar-sub-header"><a href="/Blog/src/tech/docker.html#手撸一个简单的-node-服务" class="sidebar-link">手撸一个简单的 node 服务</a></li><li class="sidebar-sub-header"><a href="/Blog/src/tech/docker.html#docker-网络处理" class="sidebar-link">docker 网络处理</a></li><li class="sidebar-sub-header"><a href="/Blog/src/tech/docker.html#docker-数据持久化" class="sidebar-link">docker 数据持久化</a></li><li class="sidebar-sub-header"><a href="/Blog/src/tech/docker.html#docker-管理编排监控工具-区别" class="sidebar-link">docker 管理编排监控工具 [区别](https://blog.csdn.net/notsaltedfish/article/details/80959913)</a></li><li class="sidebar-sub-header"><a href="/Blog/src/tech/docker.html#docker-实用指令" class="sidebar-link">docker 实用指令</a></li><li class="sidebar-sub-header"><a href="/Blog/src/tech/docker.html#实战实践-基于-gitlab-的-docker-持续集成以及持续构建" class="sidebar-link">实战实践 --- 基于 gitlab 的 docker 持续集成以及持续构建</a></li></ul></li></ul></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>css杂烩</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>js小视</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>node工具</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>vue组件及小记</span><span class="arrow right"></span></p><!----></div></li></ul></div><div class="page"><div class="content"><h2 id="docker-心路历程"><a href="#docker-心路历程" aria-hidden="true" class="header-anchor">#</a> docker 心路历程</h2><h3 id="软件开发痛点"><a href="#软件开发痛点" aria-hidden="true" class="header-anchor">#</a> 软件开发痛点</h3><p>环境的配置，例如 python 有 2 和 3 有些语法还不兼容，在把代码给交付的时候，需要跟对方说好依赖的版本和库，在部署的也要在机器先配置好一样的环境</p><h3 id="什么是-docker"><a href="#什么是-docker" aria-hidden="true" class="header-anchor">#</a> 什么是 docker</h3><ol><li>Docker 属于 Linux 容器的一种封装，提供简单易用的容器使用接口。它是目前最流行的 Linux 容器解决方案。</li><li>Docker 将应用程序与该程序的依赖，打包在一个文件里面。运行这个文件，就会生成一个虚拟容器。程序在这个虚拟容器里运行，就好像在真实的物理机上运行一样。有了 Docker，就不用担心环境问题。</li><li>Docker 的接口相对简单，用户可以方便地创建和使用容器，把自己的应用放入容器。容器还可以进行版本管理、复制、分享、修改，就像管理普通的代码一样。</li><li>docker 的原理就是 集装箱 原理，在理解 docker 操作的时候，想象成在一艘货轮操作一个个集装箱。</li></ol><h3 id="docker-能干什么"><a href="#docker-能干什么" aria-hidden="true" class="header-anchor">#</a> docker 能干什么</h3><ol><li>提供一次性的环境。比如，本地测试他人的软件、持续集成的时候提供单元测试和构建的环境。</li><li>提供弹性的云服务。因为 Docker 容器可以随开随关，很适合动态扩容和缩容。</li><li>组建微服务架构。通过多个容器，一台机器可以跑多个服务，因此在本机就可以模拟出微服务架构。</li><li>应用的自动化打包、自动化测试和持续集成、发布。</li><li>在服务型环境中部署和调整数据库或其他的后台应用。</li></ol><h3 id="和虚拟机的区别"><a href="#和虚拟机的区别" aria-hidden="true" class="header-anchor">#</a> 和虚拟机的区别</h3><p><img src="https://makefriends.bs2dl.yy.com/bm1540443626789.png" alt="image"></p><h3 id="docker-在-window-上的正确使用姿势"><a href="#docker-在-window-上的正确使用姿势" aria-hidden="true" class="header-anchor">#</a> docker 在 window 上的正确使用姿势</h3><ul><li>工具准备</li></ul><ol><li>virtualbox 【VirtualBox 是一款开源虚拟机软件，可以直观地看到当前系统有多少虚拟机】
+&amp;&amp; vagrant 【用于创建和部署虚拟化开发环境，这里主要用来安装 centos7 虚拟机到本地】</li><li>docker-machine 【用于创建和管理 安装了docker 容器虚机的一个工具，用 docker-machine  创建的 docker 容器可以在 virtualBox 管理，主要是可以帮助我们在远程的机器上安装和管理 Docker】--- <a href="https://docs.docker.com/machine/" target="_blank" rel="noopener noreferrer">传送门</a></li></ol><p><img src="https://makefriends.bs2dl.yy.com/bm1540542725718.png" alt="image"></p><ul><li><p>window 本地安装 docker 【满足想在 window 上跑 docker 的你】 <a href="https://docs.docker.com/docker-for-windows/install/" target="_blank" rel="noopener noreferrer">地址</a></p></li><li><p>安装本地虚拟机 centos7</p><blockquote><p><a href="https://www.virtualbox.org/wiki/Downloads" target="_blank" rel="noopener noreferrer">下载 VirtualBox</a> &amp;&amp;
+<a href="https://www.vagrantup.com/" target="_blank" rel="noopener noreferrer">下载 vagrant</a></p></blockquote><ol><li>首先找一个目录用来专门放我们的虚拟机，在对应目录打开命令行工具</li><li>创建 Vagrantfile 文件 vagrant init centos/7    ##tip：Vagrantfile 文件可以存储要创建的虚机的版本并且在虚拟机启动的时候执行后面的脚本</li><li>安装 vagrant up</li><li>进入机器 vagrant ssh 或者 在 virtualbox 里面打开</li><li>登录虚机 name: root  psd: vagrant</li><li>安装 docker <a href="https://docs.docker.com/install/linux/docker-ce/centos/" target="_blank" rel="noopener noreferrer">地址</a></li></ol></li><li><p>安装本地 docker-machine
+<a href="https://docs.docker.com/machine/install-machine/" target="_blank" rel="noopener noreferrer">地址</a>
+打开 gitbash 【这是在 window 上创建 docker 的另一种姿势】</p><pre class="language-text"><code>base=https://github.com/docker/machine/releases/download/v0.14.0 &amp;&amp;
+mkdir -p &quot;$HOME/bin&quot; &amp;&amp;
+curl -L $base/docker-machine-Windows-x86_64.exe &gt; &quot;$HOME/bin/docker-machine.exe&quot; &amp;&amp;
+chmod +x &quot;$HOME/bin/docker-machine.exe&quot;
+</code></pre><p>常用指令和<a href="https://www.cnblogs.com/sparkdev/p/7044950.html" target="_blank" rel="noopener noreferrer">基本操作</a></p><ol><li>docker-machine create demo 创建一台名称为 demo 的虚机 并且在里面安装好了 docker</li><li>docker-machine env xxx  ---&gt; eval $(docker-machine env xxx) 远程管理 docker</li><li>docker-mechine ls</li><li>docker-mechine ssh demo</li><li>exit</li><li>docker-mechine stop</li><li>docker-mechine start</li></ol></li></ul><h3 id="docker-基本介绍及架构分析"><a href="#docker-基本介绍及架构分析" aria-hidden="true" class="header-anchor">#</a> docker 基本介绍及架构分析</h3><ul><li>docker 提供了一个开发，打包，运行的 app 环境</li><li>把 app 和 底层的基础设施隔离开来
+<img src="https://makefriends.bs2dl.yy.com/bm1539327952764.jpg" alt="image"></li><li>docker 整体架构
+<img src="https://makefriends.bs2dl.yy.com/bm1539328186819.jpg" alt="image"></li></ul><ol><li>用户是使用Docker Client与Docker Daemon建立通信，并发送请求给后者。</li><li>Docker Daemon作为Docker架构中的主体部分，首先提供Server的功能使其可以接受Docker Client的请求；</li><li>Engine执行Docker内部的一系列工作，每一项工作都是以一个Job的形式的存在。</li><li>Job的运行过程中，当需要容器镜像时，则从Docker Registry中下载镜像，并通过镜像管理驱动graphdriver将下载镜像以Graph的形式存储；</li><li>当需要为Docker创建网络环境时，通过网络管理驱动networkdriver创建并配置Docker容器网络环境；</li><li>当需要限制Docker容器运行资源或执行用户指令等操作时，则通过execdriver来完成。</li><li>libcontainer是一项独立的容器管理包，networkdriver以及execdriver都是通过libcontainer来实现具体对容器进行的操作。</li></ol><ul><li>docker 的几个关键指令如下：执行 docker build 的时候会根据 Dockerfile 创建一个集装箱，在集装箱里面可以指定集装箱的材质，在 build 的过程中，docker 会去 register 中取来这些材质，build 出来了一个集装箱的模子（image），在 run 的时候，docker 会根据这个 模子 创建一个真正的集装箱 container
+<img src="https://makefriends.bs2dl.yy.com/bm1539337368447.png" alt="image"></li></ul><h3 id="image-docker的模板"><a href="#image-docker的模板" aria-hidden="true" class="header-anchor">#</a> Image -- docker的模板</h3><ul><li><p>image 基本介绍 <a href="https://segmentfault.com/a/1190000009309347" target="_blank" rel="noopener noreferrer">传送门</a><img src="https://makefriends.bs2dl.yy.com/bm1539346942008.jpg" alt="image"></p><ul><li>文件和meta data的集合 （root filesystem）</li><li>分层的结构，并且每一层都可以添加修改删除文件，成为一个新的image</li><li>不同的 image 可以共享相同的 layer</li><li>image 本身是只读的</li></ul></li></ul><h4 id="搭建一个最最简单的-docker-image"><a href="#搭建一个最最简单的-docker-image" aria-hidden="true" class="header-anchor">#</a> 搭建一个最最简单的 docker image</h4><ul><li><p>准备工作</p><ul><li>yum install gcc [ 将 c 文件转换为可执行的二进制文件 ]</li><li>yum install glibc-static [ 附加的工具 ]</li></ul></li><li><p>指令顺序</p><ol><li>指定一个文件夹 mkdir hello</li><li>在 hello 下创建一个文件 hello.c 的文件</li><li>在文件编写简单的 c 代码</li></ol><pre class="language-text"><code>#include&lt;stdio.h&gt;
+void mian(){
+  printf('hello');
+}
+</code></pre><ol start="4"><li>使用指令 gcc -static hello.c -o hello 生成hello文件，通过 ./hello 可以看到我们文件的执行结果</li><li>接下来创建一个 Dockerfile 文件，文件的内容</li></ol><pre class="language-text"><code>FORM scratch #空
+ADD hello /
+CMD [&quot;/jz&quot;]
+</code></pre><ol start="6"><li>启动 docker： systemctl start docker</li><li>打包我们的 image: docker build -t jz/hello . 【这个点是基于当前目录的 Dockerfile build 的】</li><li>查看 image：docker image ls</li><li>创建container并让我们的image跑起来：docker run jz/hello</li></ol></li></ul><h3 id="container-docker的集装箱"><a href="#container-docker的集装箱" aria-hidden="true" class="header-anchor">#</a> Container -- docker的集装箱</h3><p><img src="https://makefriends.bs2dl.yy.com/bm1539347510597.png" alt="image"></p><ul><li>通过 Image 创建</li><li>在 Image layer 之上建立一个 container layer 【可读写】</li><li>Image 负责 app应用 的存储和分发，container 负责运行app</li><li>就好像我们的类（image） 和 实例（container）</li></ul><h4 id="基本指令介绍"><a href="#基本指令介绍" aria-hidden="true" class="header-anchor">#</a> 基本指令介绍</h4><ul><li>查看运行中 container：docker container ls === docker ps</li><li>查看所有 container：docker container ls -a</li><li>交互式地运行 image：docker run -it centos</li><li>清除所有 container：docker rm $(docker container ls -aq)</li><li>清除所有 exit 的 container：docker rm $(docker container ls -f &quot;status-exited&quot; -q)</li><li>将在 container 做出的变化映射成一个新的image：docker container commit</li><li>查看一个 image 的历史及资源： docker history imgId</li></ul><h3 id="dockerfile-语法"><a href="#dockerfile-语法" aria-hidden="true" class="header-anchor">#</a> Dockerfile 语法</h3><blockquote><p>通过关键字的定义</p></blockquote><ul><li><p>FROM [在什么base image 进行制作image]</p><ul><li>FROM scratch (从头开始)</li><li>FROM centos (以 centos 作为基本 image )</li><li>最佳实践 以官方的 image 作为基本 image</li></ul></li><li><p>LABEL [定义imgae的元信息]</p><ul><li>LABEL maintainer=&quot;xxxxx@gmail.com&quot;</li><li>LABEL version=&quot;1.0&quot;</li><li>LABEL descrtion=&quot;xxxxx&quot;</li></ul></li><li><p>RUN [运行命令并创建新的额 image layer]</p><ul><li>为了美观， 复杂的run使用反斜线换行，为了避免无用的分层，合并多条命令换成一行</li><li>RUN yum uodate &amp;&amp; yum install -y vim\</li></ul></li><li><p>WORKDIR [设定当前目录, 相当于 cd]</p><ul><li>不用使用 RUN 进行目录生成，WORKDIR 可以多条使用，尽量使用绝对路径</li><li>WORKDIR /root</li></ul></li><li><p>ADD &amp; COPY</p><ul><li>顾名思义 COPY 就是复制 ADD 除了复制还有解压</li><li>ADD hello /</li><li>ADD test.tar.gz /</li><li>WORKDIR /root   ADD hello ./test  ==&gt; #/root/test/hello</li><li>COPY 优先于 ADD 添加远程文件使用 curl or wget</li></ul></li><li><p>ENV [设置环境变量申明常亮]</p><ul><li>ENV MYSQL_VER 5.6  RUN apt-get install -y mysql-server=&quot;${mysql_ver}&quot;</li><li>尽量使用</li></ul></li><li><p>VOLUME [数据持久化相关]</p></li><li><p>EXPOSE [暴露一个端口]</p></li><li><p>CMD [设置容器启动后默认执行的命令和参数]</p><ul><li>可能被忽略，在被 -it 执行的时候</li></ul></li><li><p>ENTRYPOINT [设置容器启动时执行的命令，让容器以应用程序或者服务的的形式运行，一定会被执行]</p><ul><li>ENTRYPOINT [&quot;docker-entrypoint.sh&quot;]</li></ul></li></ul><blockquote><p>image 运行时 debug 【就是进入 container 内部】</p></blockquote><ul><li>docker run -it xxxxx</li></ul><h3 id="docker-的-github-hub-docker-传送门"><a href="#docker-的-github-hub-docker-传送门" aria-hidden="true" class="header-anchor">#</a> docker 的 GitHub -- hub.docker <a href="https://hub.docker.com/" target="_blank" rel="noopener noreferrer">传送门</a></h3><blockquote><p>一个官方用来存个人或者官方 image 的地方</p></blockquote><ul><li>登录： docker login</li><li>个人的镜像必须以 docker 的用户名id命名 e.g：ljz126</li><li>docker push ljz126/hello:[tag]</li></ul><h3 id="手撸一个简单的-node-服务"><a href="#手撸一个简单的-node-服务" aria-hidden="true" class="header-anchor">#</a> 手撸一个简单的 node 服务</h3><ul><li>新建一个目录 <code>node-hello</code></li><li>进入到目录中 <code>vim app.js</code></li><li><pre class="language-text"><code>var http = require(&quot;http&quot;);
+//设置主机名
+var hostName = '0.0.0.0';
+//设置端口
+var port = 8080;
+//创建服务
+var server = http.createServer(function(req,res){
+    res.setHeader('Content-Type','text/plain');
+    res.end(&quot;hello nodejs&quot;);
+
+});
+server.listen(port,hostName,function(){
+    console.log(`服务器运行在http://${hostName}:${port}`);
+});
+</code></pre></li><li>新建 Dockerfile <code>vim Dockerfile</code></li><li><pre class="language-text"><code>FROM node:4.6
+LABEL container=&quot;jiazhi&quot;
+COPY app.js /app/
+WORKDIR /app
+CMD node app.js
+export 8080 #让端口可以在 docker 外访问
+</code></pre></li><li>docker build -t jz/node-hello .</li><li>docker run -d jz/node-hello -p 8080:8080</li><li>docker ps -a</li></ul><h3 id="docker-网络处理"><a href="#docker-网络处理" aria-hidden="true" class="header-anchor">#</a> docker 网络处理</h3><blockquote><p>每次 docker 创建一个 container 的时候，会给每个 container 分配独立的 network linux Base，而且相互之前可以 ping 通</p></blockquote><ul><li>查看当前docker链接情况： docker network ls ===&gt; bridge host none</li></ul><h4 id="通过-docker-run-起的两个-容器-的网络情况说明-【bridge】"><a href="#通过-docker-run-起的两个-容器-的网络情况说明-【bridge】" aria-hidden="true" class="header-anchor">#</a> 通过 docker run 起的两个 容器 的网络情况说明 【bridge】</h4><p><img src="https://makefriends.bs2dl.yy.com/bm1539351828567.png" alt="image"></p><ul><li>查看网络 bridge 情况： brctl show</li><li>容器间的link：<pre class="language-text"><code>// 假设有 两个 mongo 和 app 的 image
+docker run -d --name mongo mongo
+docker run -d --name mongo --link mongo app 【相当于在 app 里面的设置了 dns mongo --&gt; mongo 的 ip】
+</code></pre></li><li>创建一个自己的 bridge 并连接：
+<ul><li>docker network create my-bridge</li><li>docker run -d --network my-bridge --name mongo mongo</li></ul></li><li>端口映射 docker 对外提供一个服务
+<ul><li>docker run -p 8080:8080 -d --name nginx nginx</li></ul></li></ul><h4 id="通过-docker-run-network-none-host-起容器的网络情况说明【none-host】"><a href="#通过-docker-run-network-none-host-起容器的网络情况说明【none-host】" aria-hidden="true" class="header-anchor">#</a> 通过 docker run --network none/host 起容器的网络情况说明【none/host】</h4><p><img src="https://makefriends.bs2dl.yy.com/bm1539414765240.png" alt="image"></p><h4 id="实例演示-一个-python-docker-程序去链接一个-redis-docker"><a href="#实例演示-一个-python-docker-程序去链接一个-redis-docker" aria-hidden="true" class="header-anchor">#</a> 实例演示 一个 python-docker 程序去链接一个 redis-docker</h4><pre class="language-text"><code>docker run -d --name redis redis
+docker run -d -p 5000:5000 --link redis --name py -e REDIS_HOST=redis py
+
+// 问题来了 如果两个服务是在不同的服务器上呢
+参考：[VXLAN](https://cizixs.com/2017/09/25/vxlan-protocol-introduction/) &amp;&amp; 分布式存储工具 [etcd](https://www.hi-linux.com/posts/40915.html)
+</code></pre><h3 id="docker-数据持久化"><a href="#docker-数据持久化" aria-hidden="true" class="header-anchor">#</a> docker 数据持久化</h3><blockquote><p>因为 docker 产生的数据只存储在 docker container 本身，所以当一个 container 被 stop 而且 rm 的时候，数据就会随之消失</p></blockquote><ul><li><p>生产</p><ul><li><code>/var/lib/mysql</code> 为 Dockerfile 的 VOLUME 的值
+<code>docker run -d -v mysql:[VOLUME] --name masql1 -e MYSQL_ALLOW_EMPTY_PASSWORD=true mysql</code></li></ul></li><li><p>开发</p><ul><li>同一个文件 就是 docker 里面实际运行的 WORKDIR 就是 -v 后面的文件夹
+<code>docker run -d -v $(pwd):[WORKDIR] --name masql1 mysql</code></li></ul></li></ul><h3 id="docker-管理编排监控工具-区别"><a href="#docker-管理编排监控工具-区别" aria-hidden="true" class="header-anchor">#</a> docker 管理编排监控工具 <a href="https://blog.csdn.net/notsaltedfish/article/details/80959913" target="_blank" rel="noopener noreferrer">区别</a></h3><h4 id="docker-批量管理-docker-compose"><a href="#docker-批量管理-docker-compose" aria-hidden="true" class="header-anchor">#</a> docker 批量管理 --- docker compose</h4><h4 id="docker-集群编排工具-一-k8s"><a href="#docker-集群编排工具-一-k8s" aria-hidden="true" class="header-anchor">#</a> docker 集群编排工具 一 --- k8s</h4><h4 id="docker-集群编排工具-二-docker-swarm"><a href="#docker-集群编排工具-二-docker-swarm" aria-hidden="true" class="header-anchor">#</a> docker 集群编排工具 二 --- docker swarm</h4><h4 id="docker-运维和监控-heapster-grafana-influxdb-elk-fluentd"><a href="#docker-运维和监控-heapster-grafana-influxdb-elk-fluentd" aria-hidden="true" class="header-anchor">#</a> docker 运维和监控 --- Heapster + Grafana + InfluxDB + ELK + Fluentd</h4><h3 id="docker-实用指令"><a href="#docker-实用指令" aria-hidden="true" class="header-anchor">#</a> docker 实用指令</h3><ul><li><p><code>docker exec -it dockerid xxxxx[命令]</code> --在docker内部执行linux指令</p></li><li><p><code>doicker rm $(docker ps -aq)</code> -- 清除所有已经停止的 docker</p></li><li><p><code>docker run -d --name=demo dockeImage</code> -- 给docker命名</p></li><li><p><code>docker rm -f demo</code> --强制关闭运行中的docker</p></li><li><p><code>docker stop demo</code></p></li><li><p><code>docker start demo</code></p></li><li><p><code>docker rm demo</code></p></li><li><p><code>docker inspect docker dockerId</code> -- 查看docker的详细信息</p></li><li><p><code>docker log dockerId</code> --进入docker的log</p></li></ul><hr><h3 id="实战实践-基于-gitlab-的-docker-持续集成以及持续构建"><a href="#实战实践-基于-gitlab-的-docker-持续集成以及持续构建" aria-hidden="true" class="header-anchor">#</a> 实战实践 --- 基于 gitlab 的 docker 持续集成以及持续构建</h3><blockquote><p>使用 vue-cli 进行构建，发布的话把 build 好的目录加上项目名称发到另外的服务器上，另外的服务器通过 nginx 处理静态文件</p></blockquote><ul><li><p>怎么安装 Gitlab <a href="https://www.gitlab.com.cn/installation/#centos-7" target="_blank" rel="noopener noreferrer">传送门</a> 记住 最好用 8g 内存的来安装这个 不然好卡的</p></li><li><p>怎么安装 GitLab-runner  <a href="https://segmentfault.com/a/1190000007180257" target="_blank" rel="noopener noreferrer">传送门</a></p></li></ul><blockquote><p>值得一提的是 gitlab-runner 不需要和 gitlab 处于同一个服务器，可以试另外的机器甚至是本地虚拟机</p></blockquote><ul><li>可以修改gitlab配置文件 <code>vim /etc/gitlab/gitlab.rb</code> &amp;&amp; <code>gitlab-ctl reconfigure</code>（gitlab安装了并不会自动 running 要执行这个）</li></ul><h4 id="准备工作"><a href="#准备工作" aria-hidden="true" class="header-anchor">#</a> 准备工作</h4><ul><li>本地制作 vue-cli 的 docker image</li></ul><pre class="language-text"><code>&gt;&gt; Dockerfile
+FROM node:8.11
+LABEL container=&quot;jiazhi&quot;
+# 主要安装你的构建工具
+RUN npm install -g @vue/cli
+# 一些其他依赖 这个视工具而定
+RUN npm i -g @vue/cli-plugin-babel
+RUN npm i -g @vue/cli-plugin-eslint
+RUN npm i -g @vue/cli-service
+RUN npm i -g vue-template-compiler
+CMD echo vue-cli up
+
+&gt;&gt; 执行指令 docker build -t vue .
+
+</code></pre><blockquote><p>先普及一波 <a href="https://docs.gitlab.com/runner/" target="_blank" rel="noopener noreferrer">gitlab-runner</a></p></blockquote><ul><li><p>runner分类</p><ul><li>share-runner 这种 runner 可以给所有项目使用，但是要以管理员身份登录 gitlab 查看</li><li>project-runner 只能给当前项目使用，其他项目需要去 runner ci 的配置里面启用
+<img src="https://makefriends.bs2dl.yy.com/bm1539398577470.png" alt="image"></li></ul></li><li><p>runner 配置</p></li></ul><pre class="language-text"><code>gitlab-ci-multi-runner register
+// 输入 gitlab 地址
+Please enter the gitlab-ci coordinator URL (e.g. https://gitlab.com )
+》上图1
+Please enter the gitlab-ci token for this runner
+》上图2
+Please enter the gitlab-ci description for this runner
+my-runner
+INFO[0034] fcf5c619 Registering runner... succeeded
+Please enter the executor: shell, docker, docker-ssh, ssh?
+docker
+Please enter the Docker image (eg. ruby:2.1):
+vue
+INFO[0037] Runner registered successfully. Feel free to start it, but if it's
+running already the config should be automatically reloaded!
+
+&gt;&gt; 成功创建 runner 一个
+</code></pre><p>一步到位</p><pre class="language-text"><code>gitlab-runner register \
+  --non-interactive \
+  --url &quot;http://gitlab.levii.cn/&quot; \
+  --registration-token &quot;7mcMLfT1heLQmhrgF9FF&quot; \
+  --executor &quot;docker&quot; \
+  --docker-image fev \
+  --description &quot;fev&quot; \
+  --tag-list &quot;fev&quot; \
+  --run-untagged \
+  --locked=&quot;false&quot; \
+  # 下面这个要是不行就要手动改配置文件哦 主要是设置 bash 的目录，npm g 的全局命令装在 bash 里面呢
+  --env=&quot;[&quot;BASH_ENV=~/.bashrc&quot;, &quot;FORCE_COLOR=1&quot;]&quot; \
+  --docker-pull-policy=&quot;if-not-present&quot;
+</code></pre><ul><li>修改 runner <a href="https://docs.gitlab.com/runner/configuration/advanced-configuration.html" target="_blank" rel="noopener noreferrer">配置</a><code>vim /etc/gitlab-runner/config.toml</code>，runner 默认是去 docker hub 上拉取 image 的 真恶心</li></ul><pre class="language-text"><code>concurrent = 1
+check_interval = 0
+
+[[runners]]
+  name = &quot;docker-host&quot;
+  url = &quot;http://gitlab.docker.com/&quot;
+  token = &quot;ce6744ffcdab965485f3646d4e1009&quot;
+  executor = &quot;shell&quot;
+  [runners.cache]
+
+[[runners]]
+  name = &quot;docker-host&quot;
+  url = &quot;http://gitlab.docker.com/&quot;
+  token = &quot;56aa96e7179179e77efc1dd1cc610e&quot;
+  executor = &quot;docker&quot;
+  [runners.docker]
+    tls_verify = false
+    image = &quot;vue&quot;
+    privileged = false
+    disable_cache = false
+    volumes = [&quot;/cache&quot;]
+    # 虚拟机的话 要加上这个 不然 gitlab.docker.com 是找不到 ip 的，除非你自己另外起一个 nds server 直接这样就好了
+    extra_hosts = [&quot;gitlab.docker.com:192.168.205.10&quot;]
+    # 最主要是下面这个啦 如果本地有就在本地拿否则就去hub上拿
+    pull_policy = &quot;if-not-present&quot;
+    shm_size = 0
+  [runners.cache]
+
+[[runners]]
+  name = &quot;docker-host&quot;
+  url = &quot;http://gitlab.docker.com/&quot;
+  token = &quot;a5e63806dfa5cedc7281014b359fb7&quot;
+  executor = &quot;docker&quot;
+  [runners.docker]
+    tls_verify = false
+    image = &quot;alpine:latest&quot;
+    privileged = false
+    disable_cache = false
+    volumes = [&quot;/cache&quot;]
+    shm_size = 0
+    pull_policy = &quot;if-not-present&quot;
+    extra_hosts = [&quot;gitlab.docker.com:192.168.205.10&quot;]
+  [runners.cache]
+
+</code></pre><ul><li>配置 <a href="https://docs.gitlab.com/ee/ci/yaml/" target="_blank" rel="noopener noreferrer">.gitlab-ci.yml</a></li></ul><pre class="language-text"><code># 定义两个流程 构建和发布
+stages:
+  - build
+  - deploy
+
+# build 流程
+build:
+  stage: build
+  # 指定哪个 runner 作为构建
+  tags:
+    - vue
+  # 创建工件 就是保存哪些目录或文件到runner的运行目录下
+  artifacts:
+    expire_in: 1 week
+    paths:
+    - dist/
+  # 前置脚本
+  before_script:
+    - echo 我是前置脚本
+  # 执行脚本
+  script:
+    # gitlab 常量 获取项目名称 [其他](https://docs.gitlab.com/ce/ci/variables/README.html)
+    - echo $CI_PROJECT_NAME
+    - vue --version
+    - pwd
+    - npm i
+    - npm run build
+  # 后置脚本
+  after_script:
+    - git log -1 --pretty=medium &gt;&gt; gitlog
+  # 指定哪个分支可以运行本流程
+  only:
+    - master
+
+# 发布流程
+deploy:
+  stage: deploy
+  # 这里就直接用另外的 runner 在注册 runner 的时候选 shell 的，也可以用 vue 这个 runner 但是纯脚本的用 shell 超快的
+  tags:
+    - sh
+  variables:
+    GIT_STRATEGY: none
+  before_script:
+    - pwd
+    - ls -a
+  # 发布就是直接 -- 自己看吧 相信可以看懂的
+  # 两台 linux 的文件互传需要密码 先在 runner 的机器上切换用户 su gitlab-runner 然后设置信任实现免密[最下的链接有]
+  # 这一步我搞了好久 因为没认识到要切换用户，用 sudo 去跑也要输入密码，在 runner 中我们没办法输入
+  script:
+    - if [ -d $CI_PROJECT_NAME ]; then
+    - rm -rf $CI_PROJECT_NAME
+    - fi
+    - mkdir $CI_PROJECT_NAME
+    - mv ./dist/* $CI_PROJECT_NAME
+    - rsync -avz ./$CI_PROJECT_NAME root@192.168.205.26:/usr/share/nginx/html/www
+  environment:
+    name: master
+  allow_failure: false
+  only:
+    - master
+</code></pre><ul><li>好了 大功告成 修改文件 --&gt; push 最后看看我linux nginx 的配置</li></ul><pre class="language-text"><code>user  nginx;
+worker_processes  1;
+error_log  /var/log/nginx/error.log warn;
+pid        /var/run/nginx.pid;
+
+events {
+    worker_connections  1024;
+}
+
+http {
+    include       /etc/nginx/mime.types;
+    default_type  application/octet-stream;
+    log_format  main  '$remote_addr - $remote_user [$time_local] &quot;$request&quot; '
+                      '$status $body_bytes_sent &quot;$http_referer&quot; '
+                      '&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;';
+
+    access_log  /var/log/nginx/access.log  main;
+    sendfile        on;
+    #tcp_nopush     on;
+    keepalive_timeout  65;
+    #gzip  on;
+    server
+  {
+    listen 80;#监听端口
+    server_name www.nginx.net;#域名
+    index index.html index.htm index.php;
+    root /usr/share/nginx/html/www;#站点目录
+    access_log off;
+    location ^~ /a/ {
+        alias /usr/share/nginx/html/www/;
+    }
+  }
+    include /etc/nginx/conf.d/*.conf;
+}
+</code></pre><ul><li>怎么设置 gitlab page
+<ul><li><code>vim /etc/gitlab/gitlab.rb</code> --&gt; /gitlab_pages['enable'] vim 搜索功能</li><li>找到 <code>gitlab_pages['enable'] = false</code> 并设置为 true 即可 其他别动</li><li><code>gitlab-ctl reconfigure</code></li></ul></li></ul><hr><h4 id="参考链接"><a href="#参考链接" aria-hidden="true" class="header-anchor">#</a> 参考链接</h4><ul><li><a href="http://dockone.io/article/783" target="_blank" rel="noopener noreferrer">docker image Container 的区别</a></li><li><a href="http://www.runoob.com/docker/docker-command-manual.html" target="_blank" rel="noopener noreferrer">docker命令大全</a></li><li><a href="https://blog.csdn.net/enhancing/article/details/12836437" target="_blank" rel="noopener noreferrer">简化linux指令</a></li><li><a href="https://segmentfault.com/a/1190000006233614" target="_blank" rel="noopener noreferrer">centos 图形化</a></li><li><a href="https://zhuanlan.zhihu.com/p/43212685" target="_blank" rel="noopener noreferrer">ip地址</a></li><li><a href="https://my.oschina.net/Sheamus/blog/612059" target="_blank" rel="noopener noreferrer">ifconfig</a></li><li><a href="https://www.jianshu.com/p/7d3f3fa056e8" target="_blank" rel="noopener noreferrer">centos 安装 node</a></li><li><a href="https://www.gitlab.com.cn/installation/#centos-7" target="_blank" rel="noopener noreferrer">安装 gitlab</a></li><li><a href="https://jingyan.baidu.com/article/5552ef47f509bd518ffbc933.html" target="_blank" rel="noopener noreferrer">处理centos防火墙</a></li><li><a href="https://segmentfault.com/a/1190000007180257" target="_blank" rel="noopener noreferrer">安装 注册 gitlab runner</a></li><li><a href="https://docs.gitlab.com/runner/install/linux-repository.html" target="_blank" rel="noopener noreferrer">安装 gitlab runner 官方</a></li><li><a href="https://docs.gitlab.com/runner/register/index.html" target="_blank" rel="noopener noreferrer">注册 gitlab runner 官方</a></li><li><a href="https://blog.csdn.net/YuZhiHui_No1/article/details/44564963" target="_blank" rel="noopener noreferrer">Linux进程前后台切换</a></li><li><a href="https://www.jianshu.com/p/2b7e73b0a096" target="_blank" rel="noopener noreferrer">使用本地docker镜像</a></li><li><a href="https://gitlab.com/gitlab-org/gitlab-runner/issues/1036" target="_blank" rel="noopener noreferrer">使用虚拟机runner host error</a></li><li><a href="https://www.jianshu.com/p/e3a2a1376ca9" target="_blank" rel="noopener noreferrer">linux安装dns server</a></li><li><a href="https://www.jianshu.com/p/2b43151fb92e" target="_blank" rel="noopener noreferrer">创建 share-runner </a></li><li><a href="https://tech.upyun.com/article/246/%E5%BD%93%E8%B0%88%E5%88%B0%20GitLab%20CI%20%E7%9A%84%E6%97%B6%E5%80%99%EF%BC%8C%E6%88%91%E4%BB%AC%E9%83%BD%E8%AF%A5%E8%81%8A%E4%BA%9B%E4%BB%80%E4%B9%88%EF%BC%88%E4%B8%8B%E7%AF%87%EF%BC%89.html" target="_blank" rel="noopener noreferrer">ci原理浅析</a></li><li><a href="http://www.weiruoyu.cn/?p=669" target="_blank" rel="noopener noreferrer">远程文件拷贝</a></li><li><a href="http://www.voidcn.com/article/p-fhdkkcov-bgb.html" target="_blank" rel="noopener noreferrer">权限ssh权限问题</a></li><li><a href="https://blog.csdn.net/nfer_zhuang/article/details/42646849" target="_blank" rel="noopener noreferrer">两台linux怎么免密传输文件</a></li><li><a href="https://blog.csdn.net/s_sunnyy/article/details/79093646" target="_blank" rel="noopener noreferrer">inux远程执行shell文件</a></li><li><a href="https://blog.csdn.net/u012486840/article/details/52610320" target="_blank" rel="noopener noreferrer">CentOS 7 yum 安装 Nginx</a></li><li><a href="https://www.cnyunwei.cc/archives/1204" target="_blank" rel="noopener noreferrer">gitlab操作</a></li></ul></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/Blog/src/tech/linux.html" class="prev">
+          linux 大盘点
+        </a></span><span class="next"><a href="/Blog/src/jsDoc/cros.html">
+          前后端都需要知道的跨域
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/Blog/assets/js/3.01cf74d5.js" defer></script><script src="/Blog/assets/js/app.b978a6c9.js" defer></script>
+  </body>
+</html>
