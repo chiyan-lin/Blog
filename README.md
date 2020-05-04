@@ -1,3 +1,3 @@
-## 这是我的博客
+## 博客
 
-## 戳我 [Blog](https://jiazhi-lin.github.io/Blog/)
+## [Blog](https://gaidyLin.github.io/Blog/)
